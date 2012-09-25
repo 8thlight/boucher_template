@@ -1,5 +1,5 @@
 {
   "run_list": [
-    "recipe[butcher::base]"
+    "recipe[boucher::base]"
     ]
 }

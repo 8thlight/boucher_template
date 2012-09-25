@@ -1,4 +1,4 @@
-require 'butcher/env'
+require 'boucher/env'
 
 execute "apt-get-update-periodic" do
   command "apt-get update"
@@ -17,15 +17,15 @@ package "make"
 package "libxml2-dev"
 package "libxslt1-dev"
 
-git "/home/#{Butcher::Config[:username]}/infrastructure" do
-  repository Butcher::Config[:infrastructure_git_repo]
+git "/home/#{Boucher::Config[:username]}/infrastructure" do
+  repository Boucher::Config[:infrastructure_git_repo]
   reference "master"
-  user Butcher::Config[:username]
+  user Boucher::Config[:username]
   action :sync
 end
 
 bash "Update Gem Bundle" do
-  user Butcher::Config[:username]
-  cwd "/home/#{Butcher::Config[:username]}/infrastructure"
+  user Boucher::Config[:username]
+  cwd "/home/#{Boucher::Config[:username]}/infrastructure"
   code "bundle"
 end

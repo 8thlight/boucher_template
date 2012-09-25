@@ -1,3 +1,3 @@
 require_relative "shared"
 
-Butcher::Config[:env] = :dev
+Boucher::Config[:env] = :dev

@@ -1,5 +1,5 @@
 require 'rubygems'
 
-$: << "/Users/micahmartin/Projects/8thlight/butcher/lib"
+$: << "/Users/micahmartin/Projects/8thlight/boucher/lib"
 
-require 'butcher/tasks'
+require 'boucher/tasks'
