@@ -18,7 +18,7 @@ Boucher::Config[:infrastructure_git_repo] = "git@github.com:<github account name
 Boucher::Config[:base_image_id] = 'your-ami-id'
 
 # What are your default image settngs?
-Boucher::Config[:default_instance_flavor_id] = 'm1.small'
+Boucher::Config[:default_instance_flavor_id] = 't1.micro'
 Boucher::Config[:default_instance_groups] = %w(SSH)
 
 # Is there any particular git branch you'll be pulling from?
