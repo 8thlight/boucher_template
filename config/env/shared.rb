@@ -15,7 +15,7 @@ Boucher::Config[:username] = 'ubuntu'
 Boucher::Config[:infrastructure_git_repo] = "git@github.com:<github account name>/<project name>.git"
 
 # If you haven't already, create a base AMI on EC2 and put it's id below.
-Boucher::Config[:base_image_id] = 'your-ami-id'
+Boucher::Config[:default_image_id] = 'your-ami-id'
 
 # What are your default image settngs?
 Boucher::Config[:default_instance_flavor_id] = 't1.micro'
