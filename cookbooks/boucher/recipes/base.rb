@@ -9,6 +9,13 @@ execute "apt-get-update-periodic" do
   end
 end
 
+cron "sync-time" do
+  user "root"
+  command "ntpdate ntp.ubuntu.com"
+  minute "0"
+  hour "0"
+end
+
 package "ruby1.9.1"
 package "ruby1.9.1-dev"
 package "git"
